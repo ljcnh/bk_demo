@@ -12,11 +12,13 @@ specific language governing permissions and limitations under the License.
 """
 
 from django.conf.urls import url
+from home_application import views
 
 from . import views
 
 urlpatterns = (
     url(r"^$", views.home),
+    url(r'^hello/$', views.hello),
     url(r"^dev-guide/$", views.dev_guide),
     url(r"^contact/$", views.contact),
 )
